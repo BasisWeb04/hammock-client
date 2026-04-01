@@ -6,8 +6,8 @@ import RevealOnScroll from "@/components/RevealOnScroll";
 
 const INSURANCE_ROWS = [
   { service: "Wind Mitigation Inspection", withHome: "$95", standalone: "$140" },
-  { service: "Roof Certification", withHome: "$95", standalone: "$140" },
-  { service: "Four Point Inspection", withHome: "$95", standalone: "$140" },
+  { service: "Roof Condition & Remaining Life Report", withHome: "$95", standalone: "$140" },
+  { service: "Four Point Inspection", withHome: "$70", standalone: "$125" },
   { service: "Storm Damage Assessment", withHome: "\u2014", standalone: "$225" },
 ];
 

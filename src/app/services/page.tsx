@@ -36,6 +36,11 @@ const SERVICE_ICONS = [
     <path d="m15 9-6 6" />
     <path d="m9 9 6 6" />
   </svg>,
+  // Roof Condition - roof outline
+  <svg key="roof" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <path d="m3 12 9-8 9 8" />
+    <path d="M5 12v7a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-7" />
+  </svg>,
 ];
 
 export default function ServicesPage() {

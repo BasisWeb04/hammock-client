@@ -36,6 +36,11 @@ export const SERVICES = [
     description:
       "Assessment of pool equipment, surfaces, and safety features.",
   },
+  {
+    title: "Roof Condition & Remaining Life Report",
+    description:
+      "An insurance-ready report including condition assessment and estimated remaining life.",
+  },
 ];
 
 export const WHY_ITEMS = [
