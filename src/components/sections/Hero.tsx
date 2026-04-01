@@ -9,27 +9,26 @@ export default function Hero() {
             Professional Home Inspections on Florida&apos;s Space Coast
           </h1>
           <p className="text-base text-gray-600 leading-relaxed max-w-[520px] mb-8">
-            Clear, thorough inspections with straightforward reporting,
-            transparent pricing, and modern tools — including drone-assisted roof
-            inspections.
+            Clear, thorough inspections with straightforward reporting and
+            transparent pricing — so you know exactly what you&apos;re getting.
           </p>
 
           <div className="flex flex-wrap gap-3 mb-10">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center bg-navy text-white text-sm font-semibold px-6 py-3 rounded-lg shadow-sm hover:bg-navy-light hover:shadow-md hover:-translate-y-px transition-all duration-250 tracking-[0.01em]"
+              className="inline-flex items-center justify-center bg-navy text-white text-[15px] font-semibold px-7 py-3.5 rounded-lg shadow-sm hover:bg-navy-light hover:shadow-md hover:-translate-y-px transition-all duration-250 tracking-[0.01em]"
             >
               Request an Inspection
             </Link>
             <Link
               href="/pricing"
-              className="inline-flex items-center justify-center text-navy text-sm font-semibold px-6 py-3 rounded-lg border-[1.5px] border-navy hover:bg-navy hover:text-white transition-all duration-250 tracking-[0.01em]"
+              className="inline-flex items-center justify-center text-navy text-sm font-semibold px-5 py-2.5 rounded-lg border border-navy/70 hover:bg-navy hover:text-white transition-all duration-250 tracking-[0.01em]"
             >
               View Pricing
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
               "Licensed & insured",
               "FAA certified drone pilot",
@@ -38,10 +37,10 @@ export default function Hero() {
             ].map((bullet) => (
               <div
                 key={bullet}
-                className="flex items-center gap-2.5 text-[13.5px] font-medium text-charcoal"
+                className="flex items-center gap-2.5 text-[15px] font-medium text-charcoal"
               >
                 <svg
-                  className="shrink-0 w-[18px] h-[18px] text-teal"
+                  className="shrink-0 w-5 h-5 text-teal"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"

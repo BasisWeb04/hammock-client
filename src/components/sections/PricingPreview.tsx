@@ -6,7 +6,7 @@ import RevealOnScroll from "@/components/RevealOnScroll";
 
 export default function PricingPreview() {
   return (
-    <section className="bg-background py-20 px-6">
+    <section className="bg-background py-24 px-6">
       <div className="max-w-[1140px] mx-auto">
         <RevealOnScroll>
           <p className="font-body text-xs font-semibold uppercase tracking-[0.12em] text-teal mb-3">
@@ -15,7 +15,7 @@ export default function PricingPreview() {
           <h2 className="font-heading text-[clamp(1.5rem,1.2rem+1.3vw,2rem)] font-bold text-navy mb-4 max-w-[600px]">
             Simple, transparent pricing
           </h2>
-          <p className="text-[15px] text-gray-500 max-w-[560px] leading-relaxed mb-12">
+          <p className="text-[15px] text-gray-600 max-w-[560px] leading-relaxed mb-12">
             No guesswork. No need to call just to get a starting price.
           </p>
         </RevealOnScroll>
@@ -35,7 +35,7 @@ export default function PricingPreview() {
                 <span className="font-semibold text-navy">{row.price}</span>
               </div>
             ))}
-            <p className="text-[13.5px] text-gray-500 mt-5 leading-relaxed">
+            <p className="text-[13.5px] text-gray-600 mt-5 leading-relaxed">
               We&apos;ll confirm pricing before the inspection — no surprises.
             </p>
             <Link

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { SERVICES } from "@/lib/constants";
 import RevealOnScroll from "@/components/RevealOnScroll";
 
@@ -39,7 +40,7 @@ const SERVICE_ICONS = [
 
 export default function Services() {
   return (
-    <section className="bg-background py-20 px-6">
+    <section className="bg-background py-24 px-6">
       <div className="max-w-[1140px] mx-auto">
         <RevealOnScroll>
           <p className="font-body text-xs font-semibold uppercase tracking-[0.12em] text-teal mb-3">
@@ -48,7 +49,7 @@ export default function Services() {
           <h2 className="font-heading text-[clamp(1.5rem,1.2rem+1.3vw,2rem)] font-bold text-navy mb-4 max-w-[600px]">
             Comprehensive inspections with clarity where it matters most
           </h2>
-          <p className="text-[15px] text-gray-500 max-w-[560px] leading-relaxed mb-12">
+          <p className="text-[15px] text-gray-600 max-w-[560px] leading-relaxed mb-12">
             We inspect the major visible and accessible systems of the home and
             provide a clear, organized report to help you make informed
             decisions. Our services are designed to provide clear, practical
@@ -59,17 +60,17 @@ export default function Services() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {SERVICES.map((service, i) => (
             <RevealOnScroll key={service.title} delay={i * 75}>
-              <div className="bg-white p-7 rounded-lg shadow-sm border border-navy/[0.06] transition-all duration-300 hover:shadow-md hover:-translate-y-[3px]">
+              <Link href="/services" className="block bg-white p-7 rounded-lg shadow-sm border border-navy/[0.06] transition-all duration-300 hover:shadow-md hover:-translate-y-[3px]">
                 <div className="w-10 h-10 bg-teal/10 rounded-[10px] flex items-center justify-center text-teal mb-4">
                   {SERVICE_ICONS[i]}
                 </div>
                 <h3 className="font-heading text-base font-bold text-navy mb-1.5">
                   {service.title}
                 </h3>
-                <p className="text-[13.5px] text-gray-500 leading-relaxed">
+                <p className="text-[13.5px] text-gray-600 leading-relaxed">
                   {service.description}
                 </p>
-              </div>
+              </Link>
             </RevealOnScroll>
           ))}
         </div>

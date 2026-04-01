@@ -28,7 +28,7 @@ export default function ContactPage() {
             <h1 className="font-heading text-[clamp(1.75rem,1.4rem+1.5vw,2.5rem)] font-bold text-navy mb-4 max-w-[600px]">
               Request an Inspection
             </h1>
-            <p className="text-[15px] text-gray-500 max-w-[560px] leading-relaxed mb-14">
+            <p className="text-[15px] text-gray-600 max-w-[560px] leading-relaxed mb-14">
               Tell us about the property and what you need. We&apos;ll respond
               promptly with next steps and pricing confirmation.
             </p>
@@ -203,10 +203,10 @@ export default function ContactPage() {
                   Send Request
                 </button>
 
-                <p className="text-[13.5px] text-gray-500 text-center">
+                <p className="text-[13.5px] text-gray-600 text-center">
                   No obligation. Just tell us what you need.
                 </p>
-                <p className="text-[12px] text-gray-400 text-center italic">
+                <p className="text-[12px] text-gray-500 text-center italic">
                   Form functionality coming in Phase 2
                 </p>
               </form>
@@ -278,7 +278,7 @@ export default function ContactPage() {
                         <p className="text-sm font-medium text-navy">
                           Service Area
                         </p>
-                        <p className="text-[13.5px] text-gray-500">
+                        <p className="text-[13.5px] text-gray-600">
                           Florida&apos;s Space Coast
                         </p>
                       </div>
@@ -287,7 +287,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="bg-background rounded-lg p-7 border border-navy/[0.06]">
-                  <p className="text-[14px] text-gray-500 leading-relaxed">
+                  <p className="text-[14px] text-gray-600 leading-relaxed">
                     We respect your time. We&apos;ll respond as quickly as
                     possible with next steps and scheduling availability.
                   </p>

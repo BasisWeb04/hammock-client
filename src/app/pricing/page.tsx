@@ -36,7 +36,7 @@ export default function PricingPage() {
             <h1 className="font-heading text-[clamp(1.75rem,1.4rem+1.5vw,2.5rem)] font-bold text-navy mb-4 max-w-[600px]">
               Simple, transparent pricing
             </h1>
-            <p className="text-[15px] text-gray-500 max-w-[560px] leading-relaxed mb-14">
+            <p className="text-[15px] text-gray-600 max-w-[560px] leading-relaxed mb-14">
               We believe pricing should be clear and easy to understand.
             </p>
           </RevealOnScroll>
@@ -71,14 +71,14 @@ export default function PricingPage() {
               </h2>
 
               {/* Desktop table header */}
-              <div className="hidden sm:flex items-center py-3 text-xs font-semibold uppercase tracking-wide text-gray-400 border-b border-navy/[0.06]">
+              <div className="hidden sm:flex items-center py-3 text-xs font-semibold uppercase tracking-wide text-gray-500 border-b border-navy/[0.06]">
                 <span className="flex-1">Service</span>
                 <span className="w-[140px] text-right">With Home Inspection</span>
                 <span className="w-[100px] text-right">Standalone</span>
               </div>
 
               {/* Mobile table header */}
-              <div className="flex sm:hidden items-center py-3 text-[11px] font-semibold uppercase tracking-wide text-gray-400 border-b border-navy/[0.06]">
+              <div className="flex sm:hidden items-center py-3 text-[11px] font-semibold uppercase tracking-wide text-gray-500 border-b border-navy/[0.06]">
                 <span className="flex-1">Service</span>
                 <span className="w-[60px] text-right">w/ Home</span>
                 <span className="w-[60px] text-right">Alone</span>
@@ -124,7 +124,7 @@ export default function PricingPage() {
                 >
                   <div>
                     <span className="text-gray-600">{row.service}</span>
-                    <span className="block text-[12px] text-gray-400 mt-0.5">
+                    <span className="block text-[12px] text-gray-500 mt-0.5">
                       {row.note}
                     </span>
                   </div>
@@ -139,7 +139,7 @@ export default function PricingPage() {
           {/* Disclaimer + CTA */}
           <RevealOnScroll>
             <div className="max-w-[720px]">
-              <p className="text-[13.5px] text-gray-500 leading-relaxed mb-8">
+              <p className="text-[13.5px] text-gray-600 leading-relaxed mb-8">
                 Final pricing may vary based on property size, age, location, and
                 additional structures. We&apos;ll confirm pricing before the
                 inspection — no surprises.

@@ -29,16 +29,16 @@ const WHY_ICONS = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="bg-white py-20 px-6">
+    <section className="bg-white py-24 px-6">
       <div className="max-w-[1140px] mx-auto">
         <RevealOnScroll>
           <p className="font-body text-xs font-semibold uppercase tracking-[0.12em] text-teal mb-3">
-            Why Hammock
+            Why Hammock Property Inspections
           </p>
           <h2 className="font-heading text-[clamp(1.5rem,1.2rem+1.3vw,2rem)] font-bold text-navy mb-4 max-w-[600px]">
             Why clients choose Hammock Property Inspections
           </h2>
-          <p className="text-[15px] text-gray-500 max-w-[560px] leading-relaxed mb-12">
+          <p className="text-[15px] text-gray-600 max-w-[560px] leading-relaxed mb-12">
             No jargon. No unnecessary alarm. Just clear, professional reporting.
           </p>
         </RevealOnScroll>
@@ -54,7 +54,7 @@ export default function WhyChooseUs() {
                   <h3 className="font-heading text-[15px] font-bold text-navy mb-1">
                     {item.title}
                   </h3>
-                  <p className="text-[13.5px] text-gray-500 leading-relaxed">
+                  <p className="text-[13.5px] text-gray-600 leading-relaxed">
                     {item.description}
                   </p>
                 </div>

@@ -2,7 +2,7 @@ import RevealOnScroll from "@/components/RevealOnScroll";
 
 export default function ServiceArea() {
   return (
-    <section className="bg-background py-20 px-6 text-center">
+    <section className="bg-background py-24 px-6 text-center border-t border-navy/[0.04]">
       <div className="max-w-[1140px] mx-auto">
         <RevealOnScroll>
           <p className="font-body text-xs font-semibold uppercase tracking-[0.12em] text-teal mb-3">

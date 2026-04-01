@@ -5,7 +5,7 @@ import RevealOnScroll from "@/components/RevealOnScroll";
 
 export default function Process() {
   return (
-    <section className="bg-white py-20 px-6">
+    <section className="bg-white py-24 px-6">
       <div className="max-w-[1140px] mx-auto text-center">
         <RevealOnScroll>
           <p className="font-body text-xs font-semibold uppercase tracking-[0.12em] text-teal mb-3">
@@ -26,7 +26,7 @@ export default function Process() {
                 <h3 className="font-heading text-base font-bold text-navy mb-2">
                   {step.title}
                 </h3>
-                <p className="text-[13.5px] text-gray-500 leading-relaxed">
+                <p className="text-[13.5px] text-gray-600 leading-relaxed">
                   {step.description}
                 </p>
               </div>

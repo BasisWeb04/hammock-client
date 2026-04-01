@@ -50,28 +50,31 @@ export default function ServicesPage() {
             <h1 className="font-heading text-[clamp(1.75rem,1.4rem+1.5vw,2.5rem)] font-bold text-navy mb-4 max-w-[600px]">
               Inspection Services
             </h1>
-            <p className="text-[15px] text-gray-500 max-w-[560px] leading-relaxed mb-12">
+            <p className="text-[15px] text-gray-600 max-w-[560px] leading-relaxed mb-12">
               We provide residential inspection services designed to deliver
               clear, practical information.
             </p>
           </RevealOnScroll>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {SERVICES.map((service, i) => (
-              <RevealOnScroll key={service.title} delay={i * 75}>
-                <div className="bg-white p-7 rounded-lg shadow-sm border border-navy/[0.06] transition-all duration-300 hover:shadow-md hover:-translate-y-[3px]">
-                  <div className="w-10 h-10 bg-teal/10 rounded-[10px] flex items-center justify-center text-teal mb-4">
-                    {SERVICE_ICONS[i]}
-                  </div>
-                  <h2 className="font-heading text-base font-bold text-navy mb-1.5">
-                    {service.title}
-                  </h2>
-                  <p className="text-[13.5px] text-gray-500 leading-relaxed">
-                    {service.description}
-                  </p>
-                </div>
-              </RevealOnScroll>
-            ))}
+            {SERVICES.map((service, i) => {
+              const slug = service.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+              return (
+                <RevealOnScroll key={service.title} delay={i * 75}>
+                  <a href={`#${slug}`} id={slug} className="block bg-white p-7 rounded-lg shadow-sm border border-navy/[0.06] transition-all duration-300 hover:shadow-md hover:-translate-y-[3px]">
+                    <div className="w-10 h-10 bg-teal/10 rounded-[10px] flex items-center justify-center text-teal mb-4">
+                      {SERVICE_ICONS[i]}
+                    </div>
+                    <h2 className="font-heading text-base font-bold text-navy mb-1.5">
+                      {service.title}
+                    </h2>
+                    <p className="text-[13.5px] text-gray-600 leading-relaxed">
+                      {service.description}
+                    </p>
+                  </a>
+                </RevealOnScroll>
+              );
+            })}
           </div>
         </div>
       </section>

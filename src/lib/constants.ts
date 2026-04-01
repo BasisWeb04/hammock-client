@@ -47,7 +47,7 @@ export const WHY_ITEMS = [
   {
     title: "Drone-Assisted Roof Inspections",
     description:
-      "FAA Part 107 certified aerial assessments for thorough roof coverage.",
+      "FAA certified aerial assessments for thorough roof coverage.",
   },
   {
     title: "Engineering Mindset",
