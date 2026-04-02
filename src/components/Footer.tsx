@@ -1,13 +1,5 @@
 import Link from "next/link";
-
-const FOOTER_LINKS = [
-  { label: "Home", href: "/" },
-  { label: "Services", href: "/services" },
-  { label: "Pricing", href: "/pricing" },
-  { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
-  { label: "Privacy Policy", href: "#" },
-];
+import { footerLinks, copyright as siteCopyright } from "@/lib/content";
 
 export default function Footer() {
   return (
@@ -25,7 +17,7 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-wrap justify-center gap-6">
-          {FOOTER_LINKS.map((link) => (
+          {footerLinks.map((link) => (
             <Link
               key={link.label}
               href={link.href}
@@ -37,7 +29,7 @@ export default function Footer() {
         </div>
 
         <div className="w-full text-center mt-8 pt-6 border-t border-white/[0.08] text-xs text-white/35">
-          &copy; 2026 Hammock Property Inspections, LLC. All rights reserved.
+          {siteCopyright}
         </div>
       </div>
     </footer>

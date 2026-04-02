@@ -1,17 +1,7 @@
 "use client";
 
 import RevealOnScroll from "@/components/RevealOnScroll";
-
-const INSPECTION_TYPES = [
-  "Full Home Inspection",
-  "4-Point Inspection",
-  "Wind Mitigation Inspection",
-  "4-Point + Wind Mitigation",
-  "Pre-Listing Inspection",
-  "Homeowner Inspection",
-  "Pool & Spa Inspection",
-  "Not Sure",
-];
+import { inspectionTypes, contact } from "@/lib/content";
 
 const inputClasses =
   "w-full bg-white border border-navy/[0.08] rounded-lg py-3 px-4 text-sm text-charcoal placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-teal/30 focus:border-teal transition-colors duration-200";
@@ -155,7 +145,7 @@ export default function ContactPage() {
                       <option value="" disabled>
                         Select type...
                       </option>
-                      {INSPECTION_TYPES.map((type) => (
+                      {inspectionTypes.map((type) => (
                         <option key={type} value={type}>
                           {type}
                         </option>
@@ -234,10 +224,10 @@ export default function ContactPage() {
                       <div>
                         <p className="text-sm font-medium text-navy">Email</p>
                         <a
-                          href="mailto:scott@hammockpropertyinspections.com"
+                          href={`mailto:${contact.email}`}
                           className="text-[13.5px] text-teal hover:underline"
                         >
-                          scott@hammockpropertyinspections.com
+                          {contact.email}
                         </a>
                       </div>
                     </div>
@@ -255,10 +245,10 @@ export default function ContactPage() {
                       <div>
                         <p className="text-sm font-medium text-navy">Phone</p>
                         <a
-                          href="tel:+13215053508"
+                          href={`tel:${contact.phoneRaw}`}
                           className="text-[13.5px] text-teal hover:underline"
                         >
-                          (321) 505-3508
+                          {contact.phone}
                         </a>
                       </div>
                     </div>
@@ -279,7 +269,7 @@ export default function ContactPage() {
                           Service Area
                         </p>
                         <p className="text-[13.5px] text-gray-600">
-                          Florida&apos;s Space Coast
+                          {contact.serviceArea}
                         </p>
                       </div>
                     </div>

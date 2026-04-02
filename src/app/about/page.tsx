@@ -2,13 +2,7 @@
 
 import Link from "next/link";
 import RevealOnScroll from "@/components/RevealOnScroll";
-
-const CREDENTIALS = [
-  "Licensed and insured Florida home inspector",
-  "FAA Part 107 certified (drone inspections)",
-  "Civil engineering background",
-  "30+ years of professional experience",
-];
+import { credentials, brandStatement } from "@/lib/content";
 
 export default function AboutPage() {
   return (
@@ -41,7 +35,7 @@ export default function AboutPage() {
               Our background includes:
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-10">
-              {CREDENTIALS.map((item, i) => (
+              {credentials.map((item, i) => (
                 <div key={i} className="flex items-start gap-2.5">
                   <svg
                     className="w-5 h-5 text-teal shrink-0 mt-0.5"
@@ -82,10 +76,7 @@ export default function AboutPage() {
           <RevealOnScroll>
             <div className="bg-background border border-navy/[0.06] rounded-lg p-8">
               <p className="text-[15px] text-navy leading-relaxed font-medium italic">
-                &ldquo;Hammock Property Inspections provides clear, professional
-                home inspections in Florida, combining thorough reporting,
-                drone-assisted capability, and an analytical approach clients can
-                trust.&rdquo;
+                &ldquo;{brandStatement}&rdquo;
               </p>
             </div>
           </RevealOnScroll>

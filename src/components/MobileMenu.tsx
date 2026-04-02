@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
-import { NAV_LINKS } from "@/lib/constants";
+import { navLinks } from "@/lib/content";
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -70,7 +70,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         </button>
 
         <nav className="flex flex-col pt-20">
-          {NAV_LINKS.map((link) => (
+          {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}

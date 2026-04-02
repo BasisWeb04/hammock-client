@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { NAV_LINKS } from "@/lib/constants";
+import { navLinks } from "@/lib/content";
 import MobileMenu from "./MobileMenu";
 
 export default function Header() {
@@ -16,7 +16,7 @@ export default function Header() {
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">
-          {NAV_LINKS.map((link) => (
+          {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}

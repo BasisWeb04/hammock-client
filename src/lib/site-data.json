@@ -1,0 +1,157 @@
+{
+  "businessName": "Hammock Property Inspections",
+  "copyright": "\u00a9 2026 Hammock Property Inspections, LLC. All rights reserved.",
+  "brandStatement": "Hammock Property Inspections provides clear, professional home inspections in Florida, combining thorough reporting, drone-assisted capability, and an analytical approach clients can trust.",
+  "contact": {
+    "email": "scott@hammockpropertyinspections.com",
+    "phone": "(321) 505-3508",
+    "phoneRaw": "+13215053508",
+    "serviceArea": "Florida\u2019s Space Coast",
+    "serviceAreaBadge": "Brevard County and surrounding Space Coast communities"
+  },
+  "navLinks": [
+    { "label": "Home", "href": "/" },
+    { "label": "Services", "href": "/services" },
+    { "label": "Pricing", "href": "/pricing" },
+    { "label": "About", "href": "/about" },
+    { "label": "Contact", "href": "/contact" }
+  ],
+  "footerLinks": [
+    { "label": "Home", "href": "/" },
+    { "label": "Services", "href": "/services" },
+    { "label": "Pricing", "href": "/pricing" },
+    { "label": "About", "href": "/about" },
+    { "label": "Contact", "href": "/contact" },
+    { "label": "Privacy Policy", "href": "#" }
+  ],
+  "hero": {
+    "headline": "Professional Home Inspections on Florida\u2019s Space Coast",
+    "subheadline": "Clear, thorough inspections with straightforward reporting and transparent pricing \u2014 so you know exactly what you\u2019re getting.",
+    "ctaPrimary": { "label": "Request an Inspection", "href": "/contact" },
+    "ctaSecondary": { "label": "View Pricing", "href": "/pricing" },
+    "trustBullets": [
+      "Licensed & insured",
+      "FAA certified drone pilot",
+      "Civil engineering background",
+      "30+ years experience"
+    ]
+  },
+  "trustBar": [
+    "Licensed",
+    "Insured",
+    "Drone-Equipped",
+    "Clear Reports",
+    "Professional Service"
+  ],
+  "services": [
+    {
+      "title": "Full Home Inspection",
+      "description": "Thorough assessment of all major visible and accessible systems."
+    },
+    {
+      "title": "4-Point Inspection",
+      "description": "Focused evaluation of HVAC, electrical, plumbing, and roofing systems."
+    },
+    {
+      "title": "Wind Mitigation",
+      "description": "Documentation of wind-resistant features that may help support insurance credits."
+    },
+    {
+      "title": "Pre-Listing Inspection",
+      "description": "Know your home\u2019s condition before putting it on the market."
+    },
+    {
+      "title": "Homeowner Inspection",
+      "description": "Routine maintenance checks for current homeowners."
+    },
+    {
+      "title": "Pool & Spa Inspection",
+      "description": "Assessment of pool equipment, surfaces, and safety features."
+    },
+    {
+      "title": "Roof Condition & Remaining Life Report",
+      "description": "An insurance-ready report including condition assessment and estimated remaining life."
+    }
+  ],
+  "whyChooseUs": [
+    {
+      "title": "Clear, Easy-to-Read Reports",
+      "description": "Organized findings you can actually understand and act on \u2014 no technical overload."
+    },
+    {
+      "title": "Drone-Assisted Roof Inspections",
+      "description": "FAA certified aerial assessments for thorough roof coverage."
+    },
+    {
+      "title": "Engineering Mindset",
+      "description": "Civil engineering background brings a disciplined, analytical approach to every inspection."
+    },
+    {
+      "title": "30+ Years of Experience",
+      "description": "Decades of professional experience applied to protecting your investment."
+    }
+  ],
+  "pricing": {
+    "homeInspection": [
+      { "size": "Up to 1,800 sq ft", "price": "$350" },
+      { "size": "1,801 \u2013 2,000 sq ft", "price": "$380" },
+      { "size": "2,001 \u2013 2,300 sq ft", "price": "$410" },
+      { "size": "2,301 \u2013 2,500 sq ft", "price": "$450" },
+      { "size": "2,501 \u2013 2,800 sq ft", "price": "$520" },
+      { "size": "2,801 \u2013 3,000 sq ft", "price": "$580" },
+      { "size": "Over 3,000 sq ft", "price": "$580 + $0.25/sf" }
+    ],
+    "insuranceInspections": [
+      { "service": "Wind Mitigation Inspection", "withHome": "$95", "standalone": "$140" },
+      { "service": "Roof Condition & Remaining Life Report", "withHome": "$95", "standalone": "$140" },
+      { "service": "Four Point Inspection", "withHome": "$70", "standalone": "$125" },
+      { "service": "Storm Damage Assessment", "withHome": "\u2014", "standalone": "$225" }
+    ],
+    "additionalServices": [
+      {
+        "service": "Pool & Spa Inspection",
+        "note": "Only available with a Home Inspection",
+        "price": "$90"
+      },
+      {
+        "service": "Detached Buildings",
+        "note": "Two-car garage or smaller",
+        "price": "$140"
+      }
+    ],
+    "disclaimer": "Final pricing may vary based on property size, age, location, and additional structures. We\u2019ll confirm pricing before the inspection \u2014 no surprises."
+  },
+  "processSteps": [
+    {
+      "number": 1,
+      "title": "Request Your Inspection",
+      "description": "Tell us about the property and what you need. We\u2019ll confirm pricing and schedule promptly."
+    },
+    {
+      "number": 2,
+      "title": "We Inspect",
+      "description": "Thorough, professional assessment of all major systems using modern tools and methods."
+    },
+    {
+      "number": 3,
+      "title": "Receive Your Report",
+      "description": "Clear, organized findings delivered quickly so you can move forward with confidence."
+    }
+  ],
+  "credentials": [
+    "Licensed and insured Florida home inspector",
+    "FAA Part 107 certified (drone inspections)",
+    "Civil engineering background",
+    "30+ years of professional experience"
+  ],
+  "inspectionTypes": [
+    "Full Home Inspection",
+    "4-Point Inspection",
+    "Wind Mitigation Inspection",
+    "4-Point + Wind Mitigation",
+    "Pre-Listing Inspection",
+    "Homeowner Inspection",
+    "Pool & Spa Inspection",
+    "Not Sure"
+  ]
+}

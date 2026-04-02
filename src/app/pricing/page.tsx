@@ -1,28 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { PRICING_ROWS } from "@/lib/constants";
+import { pricing } from "@/lib/content";
 import RevealOnScroll from "@/components/RevealOnScroll";
-
-const INSURANCE_ROWS = [
-  { service: "Wind Mitigation Inspection", withHome: "$95", standalone: "$140" },
-  { service: "Roof Condition & Remaining Life Report", withHome: "$95", standalone: "$140" },
-  { service: "Four Point Inspection", withHome: "$70", standalone: "$125" },
-  { service: "Storm Damage Assessment", withHome: "\u2014", standalone: "$225" },
-];
-
-const ADDITIONAL_ROWS = [
-  {
-    service: "Pool & Spa Inspection",
-    note: "Only available with a Home Inspection",
-    price: "$90",
-  },
-  {
-    service: "Detached Buildings",
-    note: "Two-car garage or smaller",
-    price: "$140",
-  },
-];
 
 export default function PricingPage() {
   return (
@@ -47,11 +27,11 @@ export default function PricingPage() {
               <h2 className="font-heading text-lg font-bold text-navy mb-6">
                 Home Inspection
               </h2>
-              {PRICING_ROWS.map((row, i) => (
+              {pricing.homeInspection.map((row, i) => (
                 <div
                   key={row.size}
                   className={`flex justify-between items-center py-3.5 text-sm ${
-                    i < PRICING_ROWS.length - 1
+                    i < pricing.homeInspection.length - 1
                       ? "border-b border-navy/[0.06]"
                       : ""
                   }`}
@@ -84,11 +64,11 @@ export default function PricingPage() {
                 <span className="w-[60px] text-right">Alone</span>
               </div>
 
-              {INSURANCE_ROWS.map((row, i) => (
+              {pricing.insuranceInspections.map((row, i) => (
                 <div
                   key={row.service}
                   className={`flex items-center py-3.5 text-sm ${
-                    i < INSURANCE_ROWS.length - 1
+                    i < pricing.insuranceInspections.length - 1
                       ? "border-b border-navy/[0.06]"
                       : ""
                   }`}
@@ -113,11 +93,11 @@ export default function PricingPage() {
               <h2 className="font-heading text-lg font-bold text-navy mb-6">
                 Additional Inspection Services
               </h2>
-              {ADDITIONAL_ROWS.map((row, i) => (
+              {pricing.additionalServices.map((row, i) => (
                 <div
                   key={row.service}
                   className={`flex justify-between items-start py-3.5 text-sm ${
-                    i < ADDITIONAL_ROWS.length - 1
+                    i < pricing.additionalServices.length - 1
                       ? "border-b border-navy/[0.06]"
                       : ""
                   }`}
@@ -140,9 +120,7 @@ export default function PricingPage() {
           <RevealOnScroll>
             <div className="max-w-[720px]">
               <p className="text-[13.5px] text-gray-600 leading-relaxed mb-8">
-                Final pricing may vary based on property size, age, location, and
-                additional structures. We&apos;ll confirm pricing before the
-                inspection — no surprises.
+                {pricing.disclaimer}
               </p>
               <Link
                 href="/contact"

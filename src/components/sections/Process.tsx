@@ -1,6 +1,6 @@
 "use client";
 
-import { PROCESS_STEPS } from "@/lib/constants";
+import { processSteps } from "@/lib/content";
 import RevealOnScroll from "@/components/RevealOnScroll";
 
 export default function Process() {
@@ -17,7 +17,7 @@ export default function Process() {
         </RevealOnScroll>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-          {PROCESS_STEPS.map((step, i) => (
+          {processSteps.map((step, i) => (
             <RevealOnScroll key={step.number} delay={i * 100}>
               <div className="p-8">
                 <div className="w-14 h-14 rounded-full bg-navy text-white flex items-center justify-center font-heading text-xl font-bold mx-auto mb-5">

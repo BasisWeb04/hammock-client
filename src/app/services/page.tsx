@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { SERVICES } from "@/lib/constants";
+import { services } from "@/lib/content";
 import RevealOnScroll from "@/components/RevealOnScroll";
 
 const SERVICE_ICONS = [
@@ -62,7 +62,7 @@ export default function ServicesPage() {
           </RevealOnScroll>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {SERVICES.map((service, i) => {
+            {services.map((service, i) => {
               const slug = service.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
               return (
                 <RevealOnScroll key={service.title} delay={i * 75}>

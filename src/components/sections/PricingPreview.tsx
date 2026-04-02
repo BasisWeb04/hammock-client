@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { PRICING_ROWS } from "@/lib/constants";
+import { pricing } from "@/lib/content";
 import RevealOnScroll from "@/components/RevealOnScroll";
 
 export default function PricingPreview() {
@@ -22,11 +22,11 @@ export default function PricingPreview() {
 
         <RevealOnScroll>
           <div className="bg-white rounded-xl p-8 sm:p-10 shadow-md max-w-[640px] border border-navy/[0.06]">
-            {PRICING_ROWS.map((row, i) => (
+            {pricing.homeInspection.map((row, i) => (
               <div
                 key={row.size}
                 className={`flex justify-between items-center py-3.5 text-sm ${
-                  i < PRICING_ROWS.length - 1
+                  i < pricing.homeInspection.length - 1
                     ? "border-b border-navy/[0.06]"
                     : ""
                 }`}
