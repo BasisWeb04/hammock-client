@@ -115,8 +115,8 @@ RESEND_API_KEY          — API key from Resend (email delivery)
 RESEND_FROM_EMAIL       — Verified sender email address
 CONTACT_EMAIL           — Where form submissions are emailed to
 NEXT_PUBLIC_SUPABASE_URL      — Your Supabase project URL
-NEXT_PUBLIC_SUPABASE_ANON_KEY — Supabase anonymous key (public)
-SUPABASE_SERVICE_ROLE_KEY     — Supabase service role key (private)
+NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY — Supabase publishable key (public)
+SUPABASE_SECRET_KEY                  — Supabase secret key (private)
 NEXT_PUBLIC_SITE_URL          — Your website URL (https://hammockpropertyinspections.com)
 ```
 
