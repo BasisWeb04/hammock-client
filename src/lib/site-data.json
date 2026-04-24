@@ -41,7 +41,7 @@
       "30+ years experience"
     ],
     "heroImage": {
-      "type": "placeholder",
+      "type": "image",
       "imagePath": "/hero.jpg"
     }
   },
