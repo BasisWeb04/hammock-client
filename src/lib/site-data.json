@@ -1,7 +1,7 @@
 {
   "businessName": "Hammock Property Inspections",
   "logo": {
-    "type": "image",
+    "type": "text",
     "imagePath": "/logo.png",
     "imageHeight": 40
   },
