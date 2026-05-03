@@ -22,16 +22,11 @@ export interface PricingRow {
   price: string;
 }
 
-export interface InsuranceRow {
-  service: string;
-  withHome: string;
-  standalone: string;
-}
-
 export interface AdditionalRow {
   service: string;
-  note: string;
-  price: string;
+  note?: string;
+  withHome: string;
+  standalone: string;
 }
 
 export interface ProcessStep {
@@ -59,10 +54,8 @@ export interface ContactInfo {
 
 export interface PricingData {
   homeInspectionTitle: string;
-  insuranceInspectionsTitle: string;
   additionalServicesTitle: string;
   homeInspection: PricingRow[];
-  insuranceInspections: InsuranceRow[];
   additionalServices: AdditionalRow[];
   disclaimer: string;
 }

@@ -43,11 +43,11 @@ export default function PricingPage() {
             </div>
           </RevealOnScroll>
 
-          {/* Insurance Inspections */}
+          {/* Additional Inspection Services */}
           <RevealOnScroll>
-            <div className="bg-white rounded-xl p-8 sm:p-10 shadow-md max-w-[720px] border border-navy/[0.06] mb-8">
+            <div className="bg-white rounded-xl p-8 sm:p-10 shadow-md max-w-[720px] border border-navy/[0.06] mb-10">
               <h2 className="font-heading text-lg font-bold text-navy mb-6">
-                {pricing.insuranceInspectionsTitle}
+                {pricing.additionalServicesTitle}
               </h2>
 
               {/* Desktop table header */}
@@ -64,52 +64,28 @@ export default function PricingPage() {
                 <span className="w-[60px] text-right">Alone</span>
               </div>
 
-              {pricing.insuranceInspections.map((row, i) => (
-                <div
-                  key={row.service}
-                  className={`flex items-center py-3.5 text-sm hover:bg-teal/[0.04] transition-colors duration-200 -mx-3 px-3 rounded ${
-                    i < pricing.insuranceInspections.length - 1
-                      ? "border-b border-navy/[0.06]"
-                      : ""
-                  }`}
-                >
-                  <span className="flex-1 text-gray-600 pr-4">
-                    {row.service}
-                  </span>
-                  <span className="w-[60px] sm:w-[140px] text-right font-semibold text-navy">
-                    {row.withHome}
-                  </span>
-                  <span className="w-[60px] sm:w-[100px] text-right font-semibold text-navy">
-                    {row.standalone}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </RevealOnScroll>
-
-          {/* Additional Services */}
-          <RevealOnScroll>
-            <div className="bg-white rounded-xl p-8 sm:p-10 shadow-md max-w-[720px] border border-navy/[0.06] mb-10">
-              <h2 className="font-heading text-lg font-bold text-navy mb-6">
-                {pricing.additionalServicesTitle}
-              </h2>
               {pricing.additionalServices.map((row, i) => (
                 <div
                   key={row.service}
-                  className={`flex justify-between items-start py-3.5 text-sm hover:bg-teal/[0.04] transition-colors duration-200 -mx-3 px-3 rounded ${
+                  className={`flex items-start py-3.5 text-sm hover:bg-teal/[0.04] transition-colors duration-200 -mx-3 px-3 rounded ${
                     i < pricing.additionalServices.length - 1
                       ? "border-b border-navy/[0.06]"
                       : ""
                   }`}
                 >
-                  <div>
+                  <div className="flex-1 pr-4">
                     <span className="text-gray-600">{row.service}</span>
-                    <span className="block text-[12px] text-gray-500 mt-0.5">
-                      {row.note}
-                    </span>
+                    {row.note && (
+                      <span className="block text-[12px] text-gray-500 mt-0.5">
+                        {row.note}
+                      </span>
+                    )}
                   </div>
-                  <span className="font-semibold text-navy shrink-0">
-                    {row.price}
+                  <span className="w-[60px] sm:w-[140px] text-right font-semibold text-navy whitespace-nowrap">
+                    {row.withHome}
+                  </span>
+                  <span className="w-[60px] sm:w-[100px] text-right font-semibold text-navy">
+                    {row.standalone}
                   </span>
                 </div>
               ))}

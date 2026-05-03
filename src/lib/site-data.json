@@ -106,7 +106,6 @@
   ],
   "pricing": {
     "homeInspectionTitle": "Full Home Inspection",
-    "insuranceInspectionsTitle": "Insurance Inspections",
     "additionalServicesTitle": "Additional Inspection Services",
     "homeInspection": [
       { "size": "Up to 1,800 sq ft", "price": "$350" },
@@ -117,28 +116,14 @@
       { "size": "2,801 \u2013 3,000 sq ft", "price": "$580" },
       { "size": "Over 3,000 sq ft", "price": "$580 + $0.25/sf" }
     ],
-    "insuranceInspections": [
-      { "service": "Pre-Listing Inspection", "withHome": "\u2014", "standalone": "\u2014" },
+    "additionalServices": [
+      { "service": "Pre-Listing Inspection", "withHome": "See 'Full Home Inspection'", "standalone": "" },
       { "service": "Four Point Inspection", "withHome": "$70", "standalone": "$125" },
       { "service": "Wind Mitigation Inspection", "withHome": "$95", "standalone": "$140" },
-      { "service": "Storm Damage Assessment", "withHome": "\u2014", "standalone": "$225" }
-    ],
-    "additionalServices": [
-      {
-        "service": "Roof Condition & Estimated Remaining Life Report",
-        "note": "$95 with Home Inspection",
-        "price": "$140"
-      },
-      {
-        "service": "Detached Building Inspection",
-        "note": "Two-car garage or smaller",
-        "price": "$140"
-      },
-      {
-        "service": "Pool & Spa Inspection",
-        "note": "Only available with a Home Inspection",
-        "price": "$90"
-      }
+      { "service": "Storm Damage Assessment", "withHome": "\u2014", "standalone": "$225" },
+      { "service": "Roof Condition & Estimated Remaining Life Report", "note": "$95 with Home Inspection", "withHome": "", "standalone": "$140" },
+      { "service": "Detached Building Inspection", "note": "Two-car garage or smaller", "withHome": "", "standalone": "$140" },
+      { "service": "Pool & Spa Inspection", "note": "Only available with a Home Inspection", "withHome": "", "standalone": "$90" }
     ],
     "disclaimer": "Final pricing may vary based on property size, age, location, and additional structures. We\u2019ll confirm pricing before the inspection \u2014 no surprises."
   },
