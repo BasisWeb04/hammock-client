@@ -25,7 +25,7 @@ export default function PricingPage() {
           <RevealOnScroll>
             <div className="bg-white rounded-xl p-8 sm:p-10 shadow-md max-w-[720px] border border-navy/[0.06] mb-8">
               <h2 className="font-heading text-lg font-bold text-navy mb-6">
-                Home Inspection
+                {pricing.homeInspectionTitle}
               </h2>
               {pricing.homeInspection.map((row, i) => (
                 <div
@@ -47,7 +47,7 @@ export default function PricingPage() {
           <RevealOnScroll>
             <div className="bg-white rounded-xl p-8 sm:p-10 shadow-md max-w-[720px] border border-navy/[0.06] mb-8">
               <h2 className="font-heading text-lg font-bold text-navy mb-6">
-                Insurance Inspections
+                {pricing.insuranceInspectionsTitle}
               </h2>
 
               {/* Desktop table header */}
@@ -91,7 +91,7 @@ export default function PricingPage() {
           <RevealOnScroll>
             <div className="bg-white rounded-xl p-8 sm:p-10 shadow-md max-w-[720px] border border-navy/[0.06] mb-10">
               <h2 className="font-heading text-lg font-bold text-navy mb-6">
-                Additional Inspection Services
+                {pricing.additionalServicesTitle}
               </h2>
               {pricing.additionalServices.map((row, i) => (
                 <div

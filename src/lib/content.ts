@@ -58,6 +58,9 @@ export interface ContactInfo {
 }
 
 export interface PricingData {
+  homeInspectionTitle: string;
+  insuranceInspectionsTitle: string;
+  additionalServicesTitle: string;
   homeInspection: PricingRow[];
   insuranceInspections: InsuranceRow[];
   additionalServices: AdditionalRow[];
