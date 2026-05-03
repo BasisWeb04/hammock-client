@@ -5,41 +5,48 @@ import { services } from "@/lib/content";
 import RevealOnScroll from "@/components/RevealOnScroll";
 
 const SERVICE_ICONS = [
-  // Full Home Inspection - house
+  // 0 — Full Home Inspection — Lucide house
   <svg key="home" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
     <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
   </svg>,
-  // 4-Point Inspection - grid
-  <svg key="4pt" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-    <rect x="3" y="3" width="18" height="18" rx="2" />
-    <path d="M3 9h18M9 3v18" />
-  </svg>,
-  // Wind Mitigation - wind
-  <svg key="wind" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-    <path d="M17.7 7.7a7.5 7.5 0 1 0 0 10.6" />
-    <path d="M21 12h-4" />
-  </svg>,
-  // Pre-Listing - chart
+  // 1 — Pre-Listing Inspection — Lucide bar-chart
   <svg key="listing" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
     <path d="M12 20V10" />
     <path d="M18 20V4" />
     <path d="M6 20v-4" />
   </svg>,
-  // Homeowner Inspection - flag
+  // 2 — Four Point Inspection — Lucide grid
+  <svg key="4pt" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <rect x="3" y="3" width="18" height="18" rx="2" />
+    <path d="M3 9h18M9 3v18" />
+  </svg>,
+  // 3 — Wind Mitigation Inspection — Lucide wind
+  <svg key="wind" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <path d="M17.7 7.7a7.5 7.5 0 1 0 0 10.6" />
+    <path d="M21 12h-4" />
+  </svg>,
+  // 4 — Storm Damage Assessment — Lucide flag
   <svg key="owner" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
     <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" />
     <line x1="4" y1="22" x2="4" y2="15" />
   </svg>,
-  // Pool & Spa - water
+  // 5 — Roof Condition & Estimated Remaining Life Report — Lucide roof outline
+  <svg key="roof" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <path d="m3 12 9-8 9 8" />
+    <path d="M5 12v7a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-7" />
+  </svg>,
+  // 6 — Detached Building Inspection — Lucide warehouse (lucide-static@1.14.0)
+  <svg key="detached" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M18 21V10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v11" />
+    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 1.132-1.803l7.95-3.974a2 2 0 0 1 1.837 0l7.948 3.974A2 2 0 0 1 22 8z" />
+    <path d="M6 13h12" />
+    <path d="M6 17h12" />
+  </svg>,
+  // 7 — Pool & Spa Inspection — Lucide circle/water
   <svg key="pool" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
     <circle cx="12" cy="12" r="10" />
     <path d="m15 9-6 6" />
     <path d="m9 9 6 6" />
-  </svg>,
-  // Roof Condition - roof outline
-  <svg key="roof" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-    <path d="m3 12 9-8 9 8" />
-    <path d="M5 12v7a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-7" />
   </svg>,
 ];
 

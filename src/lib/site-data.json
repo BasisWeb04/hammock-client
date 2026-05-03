@@ -58,28 +58,32 @@
       "description": "Thorough assessment of all major visible and accessible systems."
     },
     {
-      "title": "4-Point Inspection",
+      "title": "Pre-Listing Inspection",
+      "description": "A full inspection before listing, helping you address issues early for a smoother sale."
+    },
+    {
+      "title": "Four Point Inspection",
       "description": "Focused evaluation of HVAC, electrical, plumbing, and roofing systems."
     },
     {
-      "title": "Wind Mitigation",
+      "title": "Wind Mitigation Inspection",
       "description": "Documentation of wind-resistant features that may help support insurance credits."
     },
     {
-      "title": "Pre-Listing Inspection",
-      "description": "Know your home\u2019s condition before putting it on the market."
+      "title": "Storm Damage Assessment",
+      "description": "Inspection to assess and document storm damage for repair planning or insurance purposes."
     },
     {
-      "title": "Homeowner Inspection",
-      "description": "Routine maintenance checks for current homeowners."
+      "title": "Roof Condition & Estimated Remaining Life Report",
+      "description": "An insurance-ready report including condition assessment and estimated remaining life."
+    },
+    {
+      "title": "Detached Building Inspection",
+      "description": "Inspection of a detached structure\u2019s visible and accessible components \u2014 Two-car garage or smaller."
     },
     {
       "title": "Pool & Spa Inspection",
       "description": "Assessment of pool equipment, surfaces, and safety features."
-    },
-    {
-      "title": "Roof Condition & Remaining Life Report",
-      "description": "An insurance-ready report including condition assessment and estimated remaining life."
     }
   ],
   "whyChooseUs": [
