@@ -121,7 +121,7 @@
       { "service": "Four Point Inspection", "withHome": "$70", "standalone": "$125" },
       { "service": "Wind Mitigation Inspection", "withHome": "$95", "standalone": "$140" },
       { "service": "Storm Damage Assessment", "withHome": "\u2014", "standalone": "$225" },
-      { "service": "Roof Condition & Estimated Remaining Life Report", "note": "$95 with Home Inspection", "withHome": "", "standalone": "$140" },
+      { "service": "Roof Condition & Estimated Remaining Life Report", "withHome": "$95", "standalone": "$140" },
       { "service": "Detached Building Inspection", "note": "Two-car garage or smaller", "withHome": "", "standalone": "$140" },
       { "service": "Pool & Spa Inspection", "note": "Only available with a Home Inspection", "withHome": "", "standalone": "$90" }
     ],
